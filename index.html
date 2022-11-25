@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="darklight.css">
+</head>
+<body>
+    <main class="container" id="general">
+        <header>
+            <h1 id="cal">
+                Calculadora
+            </h1>
+            <div id="ca2">
+                <label class="switchBtn">
+                    <input type="checkbox" onclick="cambiar();">
+                    <div class="slide round" id="cabecera">Light</div>
+                </label>
+            </div>
+        </header>
+        <div class="container__btn-display">
+            <div class="display">
+                <p>000</p>
+                <label for=""  aria-placeholder="000"></label>
+            </div>
+
+            <div class="container__btn">
+                <button id="btn-same"><p>(</p></button>
+                <button id="btn-same"><p>)</p></button>
+                <button id="btn-same"><p>%</p></button>
+                <button><p>CE</p></button>
+                <button id="btn-same"><p>7</p></button>
+                <button id="btn-same"> <p>8</p></button>
+                <button id="btn-same"><p>9</p></button>
+                <button id="btn-same"><p>/</p></button>
+                <button id="btn-same"><p>4</p></button>
+                <button id="btn-same"><p>5</p></button>
+                <button id="btn-same"><p>6</p></button>
+                <button id="btn-same"><p>*</p></button>
+                <button id="btn-same"><p>1</p></button>
+                <button id="btn-same"><p>2</p></button>
+                <button id="btn-same"><p>3</p></button>
+                <button id="btn-same"><p>-</p></button>
+                <button id="btn-same"><p>0</p></button>
+                <button id="btn-same"><p>.</p></button>
+                <button id="btn-same"><p>=</p></button>
+                <button id="btn-same"><p>+</p></button>
+            </div>
+            <button class="container__btn-ac">
+                <p>AC</p>
+            </button>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
