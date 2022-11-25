@@ -19,3 +19,10 @@ function cambiar() {
         changeColor('aliceblue');
     }
 }
+// Funcionalidad Calculadora
+//Variables
+let operandoa;
+let operandob;
+let operacion;
+
+//
