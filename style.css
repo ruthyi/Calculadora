@@ -55,7 +55,6 @@ header{
 }
 
 .container__btn{
-
     height: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -68,7 +67,7 @@ button{
     padding: 1em 1em;
     border: none;
 }
-.container__btn #ce, .container__btn-ac{
+.container__btn #ce, .container__btn-ac, #ac{
     color: white;
     background-color: orange;
 
@@ -85,4 +84,49 @@ button{
 } */
 #general:hover{
     box-shadow: 0.8em 0.8em 0.8em 0.8em rgb(175, 103, 175);
+}
+@media screen and (min-width: 243px) and (max-width: 520px) {
+    html,body,.container{
+        width: 100%;
+        height: 100%;
+        color: blue;
+    }
+    #general:hover{
+        box-shadow: 0;
+    }
+    .btn-same:hover, .container__btn #ce:hover, .container__btn-ac:hover, #ac:hover{
+        box-shadow: 0.2em 0.2em 0.2em 0.2em rgb(229, 140, 229);
+    }
+    .container__btn{
+        gap: 0.5em;
+    }
+    .container{
+        padding: 0.1em 0.1em;
+    }
+}
+@media screen and (min-width: 130px) and (max-width: 243px) {
+    html,body,.container{
+        width: 100%;
+        height: 100%;
+    }
+
+    header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1em 1em;
+    }
+    #cal{
+        font-size: 110%;
+    }
+    .container__btn{
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.1em;
+        grid-template-rows: minmax(1rem, auto);
+        padding: 1em 0;
+    }
 }
