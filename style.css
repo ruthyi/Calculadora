@@ -42,12 +42,16 @@ header{
 }
 
 .display{
+    height: 100px;
     padding: 1em 1em;
     border: 0.5em solid gray;
     background-color: rgb(0, 0, 0);
     color: yellow;
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
+    align-items: flex-end;
+    letter-spacing: 0.1em;
 }
 
 .container__btn{
